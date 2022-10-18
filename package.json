@@ -1,5 +1,5 @@
 {
-  "name": "storefront",
+  "name": "image",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -7,25 +7,24 @@
     "start": "ts-node-dev index.ts",
     "build": "rm -rf ./dist/* && tsc --build",
     "lint": "eslint . --ext .ts",
-    "prettier": "eslint . --ext .ts --fix",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "tsc": "tsc",
     "test": "jasmine-ts"
   },
-  "author": "Elshafeay",
+  "author": "Noura",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^4.17.9",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.14.0",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^4.3.5"
+    "sharp": "^0.31.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/express-validator": "^3.0.0",
     "@types/jasmine": "^3.10.2",
     "@types/node": "^16.11.17",
+    "@types/sharp": "^0.31.0",
     "@types/supertest": "^2.0.11",
     "@types/validator": "^13.7.1",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
@@ -34,7 +33,10 @@
     "jasmine": "^3.10.0",
     "jasmine-spec-reporter": "^7.0.0",
     "jasmine-ts": "^0.4.0",
+    "prettier": "2.7.1",
     "supertest": "^6.1.6",
-    "ts-node": "^9.1.1"
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
   }
 }
