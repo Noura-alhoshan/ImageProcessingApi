@@ -30,3 +30,4 @@ and then head to your browser at `localhost:3000` and it should be working.
 #### Notes
 1. To run your tests you can simply run `npm test`.
 2. Choose an image from assets file
+3. I have cloned the following repo for the project configrations: https://github.com/Elshafeay/ts-env/tree/express
